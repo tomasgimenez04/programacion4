@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Vikingos La Saga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="logo">
+                <a href="index.html"><img src="img/Vikings-PNG-HD-Photoroom.jpg" alt="Logo de Vikingos"></a>
+            </div>
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="temporadas.html">Temporadas</a></li>
+                    <li><a href="galeria.html" target="_blank">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="galeria" class="seccion-galeria">
+            <div class="contenedor">
+                <h2 class="galeria-titulo">Galería</h2>
+                <div class="galeria-grid">
+                    <div class="galeria-item">
+                        <img src="img/imagen 1 galeria.webp" alt="Imagen 1 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 2 galeria.jpg" alt="Imagen 2 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 3 galeria.webp" alt="Imagen 3 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 4 galeria.webp" alt="Imagen 4 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 5 galeria.jpg" alt="Imagen 5 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 6 galeria.webp" alt="Imagen 6 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 7 galeria.jpg" alt="Imagen 7 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 8 galeria.webp" alt="Imagen 8 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 9 galeria.webp" alt="Imagen 9 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 10 galeria.jpg" alt="Imagen 10 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 11 galeria.jpg" alt="Imagen 11 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 12 galeria.webp" alt="Imagen 12 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 13 galeria.webp" alt="Imagen 13 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 14 galeria.jpg" alt="Imagen 14 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 15 galeria.jpg" alt="Imagen 15 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 16 galeria.jpg" alt="Imagen 16 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 17 galeria.webp" alt="Imagen 17 Galeria">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/imagen 18 galeria.webp" alt="Imagen 18 Galeria">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-de-pagina">
+        <div class="contenedor">
+            <div class="redes-sociales">
+                <a href="https://x.com/historyvikings?lang=kn" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/vikings_oficial/?hl=es" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/vikingosseriefans/?locale=es_LA" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/playlist?list=PLob1mZcVWOaikyF40734rSXKyi00eSQrr" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 La Saga Vikinga.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-cerrar">&times;</span>
+        <img class="lightbox-contenido" id="lightbox-img">
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+    </div>
+
+    <script src="js/galeria.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
