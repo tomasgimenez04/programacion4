@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Vikingos La Saga</title>
+    <title>Vikingos - Temporada 5</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/temporadas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="cabecera">
         <div class="contenedor">
             <div class="logo">
@@ -45,40 +43,50 @@
         </div>
     </header>
 
-    <main>
-        <section id="contacto" class="seccion-contenido">
-            <div class="contenedor">
-                <h2>Contacto</h2>
-                <div class="formulario-contenedor">
-                    <form id="formulario-contacto" class="formulario">
-                        <div class="campo">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre" required>
+    <main class="temporadas-main">
+        <div class="temporadas-container">
+            <div class="season-card">
+                <h1 class="season-title">Temporada 5</h1>
+
+                <div class="tech-info">
+                    <span>Estreno: 2017 &bull; Capítulos: 20 &bull; IMDb: 8.7/10</span>
+                </div>
+
+                <div class="synopsis-container">
+                    <p class="synopsis">Con Ragnar muerto, el mundo vikingo se sumerge en una brutal guerra civil. Los hijos de Ragnar se dividen en facciones enfrentadas, con Ivar el Deshuesado liderando un bando y Lagertha, Bjorn y Ubbe en el otro. La lucha por el control de Kattegat es sangrienta y despiadada. Mientras tanto, Floki, en busca de un nuevo propósito, emprende un viaje que lo lleva a una tierra que cree es Asgard: Islandia.</p>
+                </div>
+
+                <blockquote class="season-quote">He venido a matar al cristiano que hay en ti.</blockquote>
+
+                <div class="trailer-wrapper">
+                    <div class="trailer-container">
+                        <iframe src="https://www.youtube.com/embed/s28cBkmoVIc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <h2 class="moments-title">Momentos Icónicos</h2>
+                <div class="moments-carousel-wrapper">
+                    <div class="moments-carousel">
+                        <div class="moment-card">
+                            <img src="https://via.placeholder.com/300x170/1a1a1a/d4af37?text=Guerra+Civil" alt="Guerra Civil">
+                            <h4>La Gran Guerra Civil</h4>
                         </div>
-                        <div class="campo">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" required>
+                        <div class="moment-card">
+                            <img src="https://via.placeholder.com/300x170/1a1a1a/d4af37?text=El+viaje+de+Floki" alt="El viaje de Floki">
+                            <h4>El descubrimiento de Islandia</h4>
                         </div>
-                        <div class="campo">
-                            <label for="telefono">Teléfono (opcional)</label>
-                            <input type="tel" id="telefono" name="telefono">
+                        <div class="moment-card">
+                            <img src="https://via.placeholder.com/300x170/1a1a1a/d4af37?text=La+caída+de+Lagertha" alt="La caída de Lagertha">
+                            <h4>La caída de Kattegat</h4>
                         </div>
-                        <div class="campo">
-                            <label for="asunto">Asunto</label>
-                            <input type="text" id="asunto" name="asunto" required>
+                        <div class="moment-card">
+                            <img src="https://via.placeholder.com/300x170/1a1a1a/d4af37?text=Ivar+en+Kattegat" alt="Ivar en Kattegat">
+                            <h4>Ivar, Rey de Kattegat</h4>
                         </div>
-                        <div class="campo">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="boton-enviar">Enviar mensaje</button>
-                    </form>
-                    <div id="mensaje-confirmacion" class="mensaje-confirmacion">
-                        <p>Tu mensaje fue enviado con éxito.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="pie-de-pagina">
@@ -92,8 +100,5 @@
             <p class="copyright">&copy; 2025 La Saga Vikinga.</p>
         </div>
     </footer>
-
-    <script src="js/contacto.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>

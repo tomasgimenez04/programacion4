@@ -1,0 +1,214 @@
+/*
+  Estilos Mejorados para las Páginas de Temporada de Vikings
+*/
+
+:root {
+    --gold-accent: #d4af37;
+    --charcoal-bg: #1a1a1a;
+    --card-bg: #252525;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --border-color: #333;
+    --font-title: 'MedievalSharp', cursive;
+    --font-body: 'Roboto', sans-serif;
+}
+
+.temporadas-main {
+    background-color: var(--charcoal-bg);
+    padding: 40px 20px;
+    text-align: center; /* Centrado general */
+}
+
+.temporadas-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.season-card {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 40px 0;
+}
+
+/* Título de la Temporada */
+.season-title {
+    font-family: var(--font-title);
+    font-size: 4.5em; /* Reducido */
+    color: var(--gold-accent);
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.season-title::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold-accent), transparent);
+    margin: 20px auto 0;
+    opacity: 0.6;
+}
+
+/* Ficha Técnica */
+.tech-info {
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.9em;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+/* Sinopsis */
+.synopsis-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(18, 18, 18, 0.7);
+    border: 1px solid var(--gold-accent);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.synopsis {
+    font-family: var(--font-body);
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+    color: var(--text-primary);
+}
+
+/* Frase Icónica */
+.season-quote {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 1.6em;
+    color: var(--gold-accent);
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    padding: 0 40px;
+}
+
+.season-quote::before, .season-quote::after {
+    font-family: 'Times New Roman', serif;
+    font-size: 4em;
+    color: var(--gold-accent);
+    opacity: 0.5;
+    position: absolute;
+    line-height: 1;
+}
+
+.season-quote::before {
+    content: '\201C';
+    top: -10px;
+    left: 0;
+}
+
+.season-quote::after {
+    content: '\201D';
+    bottom: -30px;
+    right: 0;
+}
+
+/* Tráiler */
+.trailer-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    border: 2px solid var(--gold-accent);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.6);
+    background-color: #000;
+    background-image: url('../img/Vikingos-imagen-barco.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.trailer-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.trailer-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Momentos Icónicos */
+.moments-title {
+    font-family: var(--font-title);
+    font-size: 2.5em;
+    color: var(--gold-accent);
+    margin: 60px 0 30px 0;
+}
+
+.moments-carousel-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.moments-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold-accent) var(--card-bg);
+}
+
+.moments-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.moments-carousel::-webkit-scrollbar-track {
+    background: var(--card-bg);
+}
+
+.moments-carousel::-webkit-scrollbar-thumb {
+    background-color: var(--gold-accent);
+    border-radius: 4px;
+}
+
+.moment-card {
+    flex: 0 0 300px;
+    scroll-snap-align: center;
+    text-align: center;
+}
+
+.moment-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.moment-card:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+.moment-card h4 {
+    font-family: var(--font-body);
+    color: var(--text-primary);
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+/* Efectos Hover Generales */
+.navegacion a:hover, .dropdown-content a:hover {
+    color: var(--gold-accent);
+    text-shadow: 0 0 5px var(--gold-accent);
+    transition: all 0.3s ease;
+}
