@@ -69,19 +69,19 @@
                 <div class="moments-carousel-wrapper">
                     <div class="moments-carousel">
                         <div class="moment-card">
-                            <img src="img/La Gran Guerra Civil.webp" alt="Guerra Civil">
+                            <img src="img/La Gran Guerra Civil.webp" alt="Guerra Civil" class="lightbox-trigger">
                             <h4>La Gran Guerra Civil</h4>
                         </div>
                         <div class="moment-card">
-                            <img src="img/El descubrimiento de Islandia.jpg" alt="El viaje de Floki">
+                            <img src="img/El descubrimiento de Islandia.jpg" alt="El viaje de Floki" class="lightbox-trigger">
                             <h4>El descubrimiento de Islandia</h4>
                         </div>
                         <div class="moment-card">
-                            <img src="img/La caída de Kattegat.webp" alt="La caída de Lagertha">
+                            <img src="img/La caída de Kattegat.webp" alt="La caída de Lagertha" class="lightbox-trigger">
                             <h4>La caída de Kattegat</h4>
                         </div>
                         <div class="moment-card">
-                            <img src="img/Ivar, Rey de Kattegat.webp" alt="Ivar en Kattegat">
+                            <img src="img/Ivar, Rey de Kattegat.webp" alt="Ivar en Kattegat" class="lightbox-trigger">
                             <h4>Ivar, Rey de Kattegat</h4>
                         </div>
                     </div>
@@ -101,5 +101,13 @@
             <p class="copyright">&copy; 2025 La Saga Vikinga.</p>
         </div>
     </footer>
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-cerrar">&times;</span>
+        <img class="lightbox-contenido" id="lightbox-img">
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
