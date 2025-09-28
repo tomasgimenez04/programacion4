@@ -4,15 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vikingos - Personajes Principales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+
     <header class="cabecera">
-        <!-- ... (La navegación actualizada se insertará aquí más adelante) ... -->
         <div class="contenedor">
-            <h1>Personajes Principales</h1>
-            <p>Esta sección está en construcción.</p>
+            <div class="logo">
+                <a href="index.html"><img src="img/Vikings-PNG-HD-Photoroom.jpg" alt="Logo de Vikingos"></a>
+            </div>
+            <button id="hamburger-btn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="temporada-1.html" class="dropbtn">Temporadas</a>
+                        <div class="dropdown-content">
+                            <a href="temporada-1.html">Temporada 1</a>
+                            <a href="temporada-2.html">Temporada 2</a>
+                            <a href="temporada-3.html">Temporada 3</a>
+                            <a href="temporada-4.html">Temporada 4</a>
+                            <a href="temporada-5.html">Temporada 5</a>
+                            <a href="temporada-6.html">Temporada 6</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Personajes</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-submenu">
+                                <a href="javascript:void(0)" class="dropbtn-submenu">Principales &raquo;</a>
+                                <div class="dropdown-content-submenu">
+                                    <a href="ragnar.html">Ragnar Lothbrok</a>
+                                    <a href="lagertha.html">Lagertha</a>
+                                    <a href="rollo.html">Rollo</a>
+                                    <a href="floki.html">Floki</a>
+                                    <a href="bjorn.html">Björn Ironside</a>
+                                    <a href="ivar.html">Ivar Boneless</a>
+                                </div>
+                            </div>
+                            <a href="personajes-secundarios.html">Secundarios</a>
+                        </div>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
+    <main>
+        <section id="personajes" class="seccion-contenido">
+            <div class="contenedor">
+                <h2 class="galeria-titulo">Personajes Principales</h2>
+
+                <div class="personaje-seccion">
+                    <div class="imagen-seccion">
+                        <!-- Image placeholder -->
+                    </div>
+                    <div class="texto-seccion">
+                        <h3>Ragnar Lothbrok</h3>
+                        <p>Ragnar Lothbrok, interpretado por Travis Fimmel, es el protagonista de las primeras cuatro temporadas. De granjero a legendario guerrero vikingo, conde de Kattegat y finalmente rey de Dinamarca. Es ambicioso, curioso, un brillante estratega y un líder nato. Profundamente dedicado a su familia, su deseo de explorar y encontrar nuevas tierras para su gente lo lleva a desafiar las tradiciones y navegar hacia el oeste. Su compleja personalidad también muestra un lado melancólico y un anhelo por el conocimiento, lo que lo convierte en un héroe trágico que siente el peso de sus responsabilidades.</p>
+                    </div>
+                </div>
+
+                <div class="personaje-seccion">
+                    <div class="imagen-seccion">
+                        <!-- Image placeholder -->
+                    </div>
+                    <div class="texto-seccion">
+                        <h3>Lagertha</h3>
+                        <p>Lagertha, interpretada por Katheryn Winnick, es una formidable doncella escudera (skjaldmö), y la primera esposa de Ragnar. Es una guerrera feroz, pragmática y orgullosa, guiada por el honor y la dignidad. A lo largo de la serie, evoluciona de granjera a Jarl y Reina de Kattegat, demostrando una notable capacidad de liderazgo. Su destreza en combate es legendaria, y está dispuesta a todo para proteger a su familia y su gente. A pesar de su separación de Ragnar, sigue siendo una figura central y una aliada clave en muchos conflictos.</p>
+                    </div>
+                </div>
+
+                <div class="personaje-seccion">
+                    <div class="imagen-seccion">
+                        <!-- Image placeholder -->
+                    </div>
+                    <div class="texto-seccion">
+                        <h3>Rollo</h3>
+                        <p>Rollo, interpretado por Clive Standen, es el impulsivo y salvaje hermano mayor de Ragnar. Su relación con Ragnar es una de las más complejas de la serie, marcada por la envidia y una constante rivalidad, pero también por momentos de lealtad. Guerrero formidable, su ambición lo lleva a traicionar a su hermano en busca de su propia gloria. Eventualmente, su camino lo lleva a Francia, donde se convierte en el Duque de Normandía, demostrando una increíble capacidad de adaptación y una transformación de un guerrero vikingo a un noble europeo.</p>
+                    </div>
+                </div>
+
+                <div class="personaje-seccion">
+                    <div class="imagen-seccion">
+                        <!-- Image placeholder -->
+                    </div>
+                    <div class="texto-seccion">
+                        <h3>Floki</h3>
+                        <p>Floki, interpretado por Gustaf Skarsgård, es el excéntrico y genial constructor de barcos, y uno de los amigos más cercanos de Ragnar. Sus innovadores diseños de barcos son cruciales para las expediciones hacia el oeste. Es un pagano devoto, casi un fanático religioso, que se considera descendiente del dios Loki. Su lealtad a Ragnar es profunda, pero su odio hacia los cristianos y su celo religioso lo llevan a cometer actos terribles, como el asesinato de Athelstan, lo que crea una brecha en su amistad con Ragnar. Es un personaje complejo, a la vez cómico y trágico.</p>
+                    </div>
+                </div>
+
+                <div class="personaje-seccion">
+                    <div class="imagen-seccion">
+                        <!-- Image placeholder -->
+                    </div>
+                    <div class="texto-seccion">
+                        <h3>Björn "Ironside" Lothbrok</h3>
+                        <p>Björn Ironside, interpretado por Alexander Ludwig, es el hijo primogénito de Ragnar y Lagertha. Hereda la sed de aventura y exploración de su padre, pero con un espíritu más directo y menos calculador. A lo largo de la serie, se convierte en un legendario guerrero y explorador, liderando expediciones al Mediterráneo. Su apodo "Ironside" (Costado de Hierro) se debe a su increíble resistencia en la batalla. Como rey de Kattegat, se esfuerza por ser un líder justo y valiente, aunque a menudo lucha con el peso del legado de su padre y sus propias decisiones impulsivas.</p>
+                    </div>
+                </div>
+
+                <div class="personaje-seccion">
+                    <div class="imagen-seccion">
+                        <!-- Image placeholder -->
+                    </div>
+                    <div class="texto-seccion">
+                        <h3>Ivar "Boneless" Lothbrok</h3>
+                        <p>Ivar el Deshuesado, interpretado por Alex Høgh Andersen, es el hijo menor de Ragnar y Aslaug. Nació con una enfermedad que le impide usar sus piernas, pero su mente es una de las más brillantes y peligrosas. Es un estratega militar genio, y su crueldad en la batalla es legendaria. Su discapacidad alimenta una inmensa ambición y un deseo de demostrar su valía, lo que lo convierte en uno de los líderes más temidos del Gran Ejército Pagano. A pesar de su tiranía y su aparente falta de empatía, Ivar es un personaje complejo con momentos de vulnerabilidad, especialmente en su relación con Ragnar.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-de-pagina">
+        <div class="contenedor">
+            <div class="redes-sociales">
+                <a href="https://x.com/historyvikings?lang=kn" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/vikings_oficial/?hl=es" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/vikingosseriefans/?locale=es_LA" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/playlist?list=PLob1mZcVWOaikyF40734rSXKyi00eSQrr" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 La Saga Vikinga.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

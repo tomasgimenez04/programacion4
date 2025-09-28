@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vikingos - Temporada 6</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/temporadas.css">
+    <title>Vikingos - Björn Ironside</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+
     <header class="cabecera">
         <div class="contenedor">
             <div class="logo">
                 <a href="index.html"><img src="img/Vikings-PNG-HD-Photoroom.jpg" alt="Logo de Vikingos"></a>
             </div>
+            <button id="hamburger-btn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <nav class="navegacion">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -54,50 +58,20 @@
         </div>
     </header>
 
-    <main class="temporadas-main">
-        <div class="temporadas-container">
-            <div class="season-card">
-                <h1 class="season-title">Temporada 6</h1>
-
-                <div class="tech-info">
-                    <span>Estreno: 2019 &bull; Capítulos: 20 &bull; IMDb: 8.6/10</span>
-                </div>
-
-                <div class="synopsis-container">
-                    <p class="synopsis">La saga llega a su épico final. Bjorn Ironside, ahora rey de Kattegat, se enfrenta a la invasión de los Rus de Kiev, liderados por el príncipe Oleg y un vengativo Ivar. Ubbe, fiel al sueño de su padre, lidera una expedición hacia lo desconocido en busca de una 'tierra dorada' al oeste. La temporada cierra los arcos de los hijos de Ragnar, explorando sus destinos finales y el ocaso de la era vikinga.</p>
-                </div>
-
-                <blockquote class="season-quote">Todos deben rendir cuentas.</blockquote>
-
-                <div class="trailer-wrapper">
-                    <div class="trailer-container">
-                        <iframe src="https://www.youtube.com/embed/BA3v1RSssXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <main>
+        <section id="personajes" class="seccion-contenido">
+            <div class="contenedor">
+                <div class="personaje-seccion">
+                    <div class="imagen-seccion">
+                        <!-- Image placeholder -->
                     </div>
-                </div>
-
-                <h2 class="moments-title">Momentos Icónicos</h2>
-                <div class="moments-carousel-wrapper">
-                    <div class="moments-carousel">
-                        <div class="moment-card">
-                            <img src="img/La invasión de los Rus.webp" alt="Invasión de los Rus" class="lightbox-trigger">
-                            <h4>La invasión de los Rus</h4>
-                        </div>
-                        <div class="moment-card">
-                            <img src="img/El viaje de Ubbe al oeste.webp" alt="El viaje de Ubbe" class="lightbox-trigger">
-                            <h4>El viaje de Ubbe al oeste</h4>
-                        </div>
-                        <div class="moment-card">
-                            <img src="img/El fin de la era vikinga.jpg" alt="El fin de la era vikinga" class="lightbox-trigger">
-                            <h4>El fin de la era vikinga</h4>
-                        </div>
-                        <div class="moment-card">
-                            <img src="img/Derrotados por un hombre muerto.webp" alt="La muerte de Bjorn" class="lightbox-trigger">
-                            <h4>Derrotados por un hombre muerto</h4>
-                        </div>
+                    <div class="texto-seccion">
+                        <h3>Björn "Ironside" Lothbrok</h3>
+                        <p>Björn Ironside, interpretado por Alexander Ludwig, es el hijo primogénito de Ragnar y Lagertha. Hereda la sed de aventura y exploración de su padre, pero con un espíritu más directo y menos calculador. A lo largo de la serie, se convierte en un legendario guerrero y explorador, liderando expediciones al Mediterráneo. Su apodo "Ironside" (Costado de Hierro) se debe a su increíble resistencia en la batalla. Como rey de Kattegat, se esfuerza por ser un líder justo y valiente, aunque a menudo lucha con el peso del legado de su padre y sus propias decisiones impulsivas.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="pie-de-pagina">
@@ -111,13 +85,7 @@
             <p class="copyright">&copy; 2025 La Saga Vikinga.</p>
         </div>
     </footer>
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-cerrar">&times;</span>
-        <img class="lightbox-contenido" id="lightbox-img">
-        <a class="lightbox-prev">&#10094;</a>
-        <a class="lightbox-next">&#10095;</a>
-    </div>
+
     <script src="js/main.js"></script>
-    <script src="js/lightbox.js"></script>
 </body>
 </html>
