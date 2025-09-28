@@ -179,19 +179,23 @@
 }
 
 .moment-card {
-    flex: 0 0 300px;
-    scroll-snap-align: center;
+    width: 300px;    /* 🔹 ancho fijo */
+    height: 200px;   /* 🔹 alto fijo */
+    flex: 0 0 auto;  /* 🔹 evita que se estiren con flexbox */
     text-align: center;
 }
 
 .moment-card img {
-    width: 100%;
-    aspect-ratio: 16 / 9 !important;
-    object-fit: cover;
+    width: 100%;         /* ocupa todo el ancho del card */
+    height: 100%;        /* ocupa todo el alto del card */
+    object-fit: cover;   /* recorta para encajar sin deformarse */
     border-radius: 8px;
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+
 
 .moment-card:hover img {
     transform: scale(1.05);
@@ -212,3 +216,12 @@
     text-shadow: 0 0 5px var(--gold-accent);
     transition: all 0.3s ease;
 }
+
+.temporada-img {
+  width: 250px;      /* o el ancho que quieras */
+  height: 250px;     /* mismo alto que ancho */
+  object-fit: cover; /* recorta la imagen sin deformarla */
+  border-radius: 8px; /* opcional: bordes redondeados */
+}
+
+

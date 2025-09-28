@@ -196,14 +196,12 @@ body {
     flex: 1;
 }
 
-.imagen-seccion img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid var(--accent-gold);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+.imagen-seccion img { width: 100%;
+     height: auto;
+     border-radius: 8px; 
+     border: 2px solid var(--accent-gold);
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+     transition: transform 0.3s ease, box-shadow 0.3s ease; }
 
 .imagen-seccion img:hover {
     transform: scale(1.03);
@@ -448,7 +446,7 @@ body {
     }
 }
 
-/* --- Galería --- */
+* --- Galería --- */
 .seccion-galeria {
     padding: 80px 0;
     background-color: var(--background-main);
@@ -542,12 +540,12 @@ body {
 
 .lightbox-contenido {
     display: block;
-    max-width: 90vw;
-    max-height: 85vh;
-    width: auto;
-    height: auto;
+    width: 80vw;   /* mismo ancho para todas */
+    height: 80vh;  /* mismo alto para todas */
+    object-fit: contain; /* asegura que no se deformen */
     animation: fadeIn 0.5s;
 }
+
 
 .lightbox-cerrar {
     position: absolute;
@@ -639,4 +637,98 @@ body {
     padding-right: 10px;
     padding-left: 10px;
   }
+}
+
+
+
+/* Contenedor principal en 2 columnas */
+.contact-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+    gap: 40px; /* Aumenta el espacio entre las dos columnas */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Estilos generales para las cards */
+.map-card, .form-card {
+    background: var(--background-secondary); /* Fondo oscuro secundario */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 30px; /* Aumenta el padding */
+    border: 1px solid var(--accent-gold); /* Borde dorado */
+}
+
+/* Mapa y Formulario */
+.map-card h3, .form-card h3 {
+    margin-bottom: 25px; /* Aumenta el margen inferior */
+    font-size: 2rem; /* Aumenta el tamaño de la fuente */
+    color: var(--accent-gold); /* Color dorado para los títulos */
+    font-family: var(--font-title); /* Fuente de título */
+    text-align: center; /* Centra los títulos */
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--accent-gold); /* Borde dorado para el mapa */
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 20px; /* Aumenta el margen inferior */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Aumenta el margen inferior */
+    font-weight: bold;
+    color: var(--text-main); /* Color de texto principal */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px; /* Aumenta el padding */
+    border: 1px solid var(--accent-gold); /* Borde dorado */
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--background-main); /* Fondo oscuro principal */
+    color: var(--text-main); /* Color de texto principal */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffffff; /* Borde más brillante en foco */
+    box-shadow: 0 0 8px var(--accent-gold); /* Sombra dorada en foco */
+}
+
+button {
+    background: var(--accent-gold); /* Fondo dorado */
+    color: #000; /* Texto negro */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
+    font-family: var(--font-title); /* Fuente de título */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Ocupa todo el ancho */
+    margin-top: 10px; /* Margen superior */
+}
+
+button:hover {
+    background: #f8d479; /* Dorado más claro al pasar el mouse */
+    transform: scale(1.02); /* Efecto de escala */
+}
+
+/* Responsivo: en pantallas chicas pasa a 1 columna */
+@media (max-width: 768px) {
+    .contact-main-container {
+        grid-template-columns: 1fr; /* una sola columna */
+    }
 }
