@@ -28,6 +28,13 @@ body {
     padding: 0 20px;
 }
 
+/* On `personajes-secundarios.html`, make the container wider */
+.contenedor-secundarios {
+    max-width: 1400px; /* Wider container */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* --- Animaciones --- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -190,6 +197,7 @@ body {
 
 .texto-seccion p {
     margin-bottom: 1.5em;
+    font-size: 1.1em;
 }
 
 .imagen-seccion {
@@ -734,10 +742,10 @@ button:hover {
 }
 
 .personaje-seccion {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 50px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
     margin-bottom: 60px;
     background-color: var(--background-secondary);
     padding: 40px;
@@ -747,7 +755,8 @@ button:hover {
 
 .personaje-seccion .imagen-seccion {
     width: 100%;
-    height: 400px; /* Fixed height for the image placeholder */
+    max-width: 600px;
+    height: 450px; 
     background-color: #000;
     border-radius: 8px;
     border: 2px solid var(--accent-gold);
@@ -756,18 +765,81 @@ button:hover {
     justify-content: center;
     color: var(--text-main);
     font-family: var(--font-title);
+    overflow: hidden; 
 }
 
-.personaje-seccion .texto-seccion h3 {
+.personaje-seccion .imagen-seccion img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 6px;
+}
+
+.personaje-seccion .texto-seccion {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.personaje-seccion h3 {
     font-family: var(--font-title);
     font-size: 2.5em;
     color: var(--accent-gold);
     margin-bottom: 20px;
 }
 
+/* --- Personajes Secundarios --- */
+.personaje-secundario-item {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+    align-items: center;
+    background-color: var(--background-secondary);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--accent-gold);
+    max-width: 1000px; /* Add max-width */
+    margin: 0 auto 30px; /* Center the card and keep bottom margin */
+}
+
+.personaje-secundario-item .imagen-seccion {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--accent-gold);
+}
+
+.personaje-secundario-item .imagen-seccion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.personaje-secundario-item .texto-seccion h3 {
+    font-family: var(--font-title);
+    font-size: 2em;
+    color: var(--accent-gold);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.personaje-secundario-item .texto-seccion p {
+    margin: 0.5;
+    line-height: 1;
+}
+
 @media (max-width: 768px) {
     .personaje-seccion {
         grid-template-columns: 1fr;
+    }
+    .personaje-secundario-item {
+        grid-template-columns: 1fr; /* Stack on mobile */
+        text-align: center;
+    }
+
+    .personaje-secundario-item .imagen-seccion {
+        margin: 0 auto 20px;
     }
 }
 
